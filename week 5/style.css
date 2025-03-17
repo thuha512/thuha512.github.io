@@ -1,0 +1,30 @@
+ img {
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+    display: block;
+    margin: 0 auto 20px;
+   text-align: center;
+}
+p{color: bisque;}
+summary{color: white;}
+figcaption{font-size: larger;
+    text-align: center;
+color: white;}
+
+body{background-color: pink;}
+details {
+    background: rgb(235, 140, 140);
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+
+}
+thead{ color: red;}
+table{border: 1px solid black;
+border-collapse: collapse;
+width: 100%;}
+table th, table td{text-align: center;}

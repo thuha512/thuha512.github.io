@@ -9,26 +9,31 @@
 </head>
 <body>
     <script language="javascript"></script>
-    <form action="#" id="main_form">
+    <form action="#" id="form_main">
         <input type="number" id="number1">
         <br>
         <button onclick="checkNumber();"on>Check</button>
+        <button onclick="resetNew();">Reset</button>
         <p id = "result"></p>
     </form>
     <!--JavaScript-->
     <script> 
        function checkNumber() {
-            var x = parseInt(document.getElementById("number 1").value);
+            var x = parseInt(document.getElementById("number1").value);
            if (x % 2 == 0){
             //show text at the bottom of the form
-            
             var text = document.createElement("result");
             text.innerHTML = x + " is Even";
-          
-
-           }else{
-            //
+          }else{
+            var text = document.createElement("result");
+            text.innerHTML = x + " is Even";
            }
+        }
+        function resetNew(){
+            document.getElementById("number1").value="";
+            document.getElementById("result").innerHTML="";
+            document.getElementById("number1").focus();
+
         }
     </script>
 </body>

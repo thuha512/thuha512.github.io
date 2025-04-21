@@ -9,20 +9,20 @@
    <form action="#"id="form_main">
     <input type="number" id = "number1">
     <br>
-    <button onclick="checkNumber();"on>Check</button>
+    <button onclick="checkNumber();" on>Check</button>
+    <p id = "result"></p>
    </form> 
    <script>
      function checkNumber(){
         var x = parseInt(document.getElementById("number1").value);
         if (x % 2 === 0) {
            // Method 1
-            //var result = document.createElement("p");
-            //result.innerHTML = x + "is Even";
-            //Document.getElementById("form_main").appendChild(result);
-           // Method 2
-           document.getElementById("form_main").append(" " + "is Even");
+            var result = document.getElementById("result");
+            result.innerHTML = x + " is Even";
+            
         } else {
-            document.write( x + " is Odd ");
+            var result = document.getElementById("result");
+            result.innerHTML = x + " is Odd";
         }
      }
    </script>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Thị Thu Hà </title>
+    <style>
+        img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 20px;
+   text-align: center;}
+   table{border: 1px solid black;}
+    </style>
+</head>
+<body>
+    <h1> Nguyễn Thị Thu Hà - 24070511 </h1>
+    <table border="1" >
+        <thead>
+            <tr>
+                <th>Họ và tên, MSSV</th> 
+                <th> Ảnh </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr></tr>
+            <td> Nguyễn Thị Thu Hà - 24070511</td>
+            <td id ="mainNav">
+            <img src="profile.jpg" alt="">
+            </td>
+            </tr>
+            </tbody>
+        </thead>
+    </table>
+    <button onclick="toggleimage()">Ẩn/hiện ảnh</button>
+    <script>
+         function toggleimage()  {const nav = document.getElementById("mainNav");
+            nav.style.display = nav.style.display === "none" ? "block" : "none";
+        }
+
+    </script>
+    
+
+        
+</body>
+</html>
